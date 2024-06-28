@@ -1,5 +1,6 @@
 package com.gnius.tareas.controllers;
 
+import com.gnius.tareas.entites.Task;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,11 +16,12 @@ public class taskController {
     }
 
     @GetMapping("/tarea")
-    public List<String> getTarea(){
-        List<String> tareas = new ArrayList<>();
-        tareas.add("1.- Comprar");
-        tareas.add("2.- Imprimir");
-        tareas.add("3.- Imprimir");
-        return tareas;
+    public List<Task> getTarea(){
+        List<Task> tasks = new ArrayList<>();
+        tasks.add(new Task(
+                "ir al mercado",
+                "llevas 50 soles y sacar la basura antes de salir :3",
+                false));
+        return tasks;
     }
 }
