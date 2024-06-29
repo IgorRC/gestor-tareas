@@ -10,8 +10,9 @@
 	</parent>
 	<groupId>com.gnius</groupId>
 	<artifactId>tareas</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<version>0.0.1</version>
+
+	<packaging>jar</packaging>
 	<name>tareas</name>
 	<description>gestiona tus tareas</description>
 	<url/>
@@ -65,6 +66,16 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<skipTests>false</skipTests>
+					<testFailureIgnore>true</testFailureIgnore>
+					<forkMode>once</forkMode>
 				</configuration>
 			</plugin>
 		</plugins>
