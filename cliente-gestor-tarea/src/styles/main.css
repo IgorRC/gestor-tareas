@@ -1,0 +1,72 @@
+/* src/styles/main.css */
+
+.task-list {
+  margin-top: 2rem;
+}
+.task-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.username {
+  margin-right: 1rem;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.dropdown-menu .menu-options {
+  list-style-type: none;
+  padding: 0;
+}
+.dropdown-menu .menu-options li {
+  padding: 0.5rem;
+}
+
+/* src/styles/main.css */
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según tu diseño */
+}
+
+.login-form-container form {
+  width: 300px; /* Ancho del formulario */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form-container .form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
